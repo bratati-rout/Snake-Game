@@ -32,7 +32,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener
 		private int[] enemyypos= {75,100,125,150,175,200,225,250,275,300,325,350,375,400,425,450,475,500,525,550,575,600,625};
 		
 		private Timer timer;
-		private int delay=200;
+		private int delay=100;
 		
 		private int lengthOfSnake=3;
 		private int moves=0;
@@ -124,7 +124,7 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener
 			{
 				lengthOfSnake++;
 				scores++;
-				delay=delay-50;
+				//delay=delay-50;
 				xpos=random.nextInt(34);
 				ypos=random.nextInt(23);
 			}
